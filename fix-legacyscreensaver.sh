@@ -21,7 +21,8 @@ if [ -n "$LEGACY_PID" ]; then
 fi
 
 if [ -n "$LEGACY_X86_PID" ]; then
-    echo "$(date): User active, legacyScreenSaver-x86_64 still running. Killing legacyScreenSaver-x86_64." >> "$LOGFILE"
+    echo "$(date): User active, legacyScreenSaver-x86_64 still running.
+    Killing legacyScreenSaver-x86_64." >> "$LOGFILE"
     kill "$LEGACY_X86_PID" 2>/dev/null
 fi
 
